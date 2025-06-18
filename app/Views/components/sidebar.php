@@ -31,6 +31,9 @@
                 <i class="bi bi-envelope"></i>
                 <span>Contact</span>
             </a>
+
+</li><!-- End Profile Nav -->
+
         </li><!-- End Contact Nav -->
         <?php
         }
