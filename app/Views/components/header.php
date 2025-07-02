@@ -16,6 +16,17 @@
   </form>
 </div><!-- End Search Bar -->
 
+<?php $session = session(); ?>
+
+<div class="user-profile">
+    <?php if ($session->get('diskon')) : ?>
+        <span class="badge bg-success">Diskon Hari Ini: Rp <?= number_format($session->get('diskon'), 0, ',', '.') ?></span>
+    <?php endif; ?>
+    <a href="#" class="nav-link">
+        <span><?= $session->get('username'); ?></span>
+    </a>
+</div>
+
 <nav class="header-nav ms-auto">
   <ul class="d-flex align-items-center">
 
@@ -223,6 +234,7 @@
     </li><!-- End Profile Nav -->
 
   </ul>
+  
 </nav><!-- End Icons Navigation -->
 
 </header><!-- End Header -->
